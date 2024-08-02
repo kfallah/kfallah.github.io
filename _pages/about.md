@@ -2,24 +2,21 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
+subtitle:
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: headshot.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p><center>San Francisco, CA 🌁</center></p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
+##### Background
+Hi, welcome to my personal page! I am a research scientist at [Waabi](waabi.ai), working on the next generation of autonomous driving technology. Specifically, I work on AI-based traffic-model simulation to improve and validate the autonomy stack. Before this position, I completed my Ph.D in machine learning at Georgia Institute of Technology under the supervision of [Professor Chris Rozell](https://siplab.gatech.edu/rozell.html).
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+##### Prior Research
+My research was in the intersection of geometric models and deep learning to improve performance with limited labelled data. To achieve this, I would apply techniques like sparse coding, manifold learning, and self-supervised learning. I am interested in building large foundation models with sparse intermediary layers (i.e., only a few elements of each activation non-zero) for interpretability, robustness, and compute efficiency. One approach I have developed uses variational inference to reach similar performance as unrolled optimization routines, like [FISTA](https://www.stat.cmu.edu/~ryantibs/convexopt/lectures/prox-grad.pdf), with a single neural network forward pass.
