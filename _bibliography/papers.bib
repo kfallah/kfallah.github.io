@@ -2,43 +2,51 @@
 ---
 
 @article{
-fallah2024manifold,
-title={Manifold Contrastive Learning with Variational Lie Group Operators},
-author={Kion Fallah and Alec Helbling and Kyle A. Johnsen and Christopher John Rozell},
-journal={Transactions on Machine Learning Research},
-issn={2835-8856},
-year={2024},
-url={https://openreview.net/forum?id=lVE1VeGQwg},
-note={}
+    fallah2024manifold,
+    title={Manifold Contrastive Learning with Variational Lie Group Operators},
+    author={Kion Fallah and Alec Helbling and Kyle A. Johnsen and Christopher John Rozell},
+    journal={Transactions on Machine Learning Research},
+    issn={2835-8856},
+    year={2024},
+    url={https://openreview.net/forum?id=lVE1VeGQwg},
+    note={},
+    selected={true},
+    pdf       = {https://openreview.net/pdf?id=lVE1VeGQwg},
+    html       = {https://openreview.net/forum?id=lVE1VeGQw},
+    code      = {https://github.com/kfallah/manifold-contrastive},
+    abstract  = {Self-supervised learning of deep neural networks has become a prevalent paradigm for learning representations that transfer to a variety of downstream tasks. Similar to proposed models of the ventral stream of biological vision, it is observed that these networks lead to a separation of category manifolds in the representations of the penultimate layer. Although this observation matches the manifold hypothesis of representation learning, current self-supervised approaches are limited in their ability to explicitly model this manifold. Indeed, current approaches often only apply a pre-specified set of augmentations for "positive pairs" during learning. In this work, we propose a contrastive learning approach that directly models the latent manifold using Lie group operators parameterized by coefficients with a sparsity-promoting prior. A variational distribution over these coefficients provides a generative model of the manifold, with samples which provide feature augmentations applicable both during contrastive training and downstream tasks. Additionally, learned coefficient distributions provide a quantification of which transformations are most likely at each point on the manifold while preserving identity. We demonstrate benefits in self-supervised benchmarks for image datasets, as well as a downstream semi-supervised task. In the former case, we demonstrate that the proposed methods can effectively apply manifold feature augmentations and improve learning both with and without a projection head. In the latter case, we demonstrate that feature augmentations sampled from learned Lie group operators can improve classification performance when using few labels.}
 }
 
 @inproceedings{pmlr-v162-fallah22a,
-  title     = {Variational Sparse Coding with Learned Thresholding},
+  title     = {Variational Sparse Coding with Learned Thresholding (Spotlight)},
   author    = {Fallah, Kion and Rozell, Christopher J},
   booktitle = {Proceedings of the 39th International Conference on Machine Learning},
   pages     = {6034--6058},
   year      = {2022},
   volume    = {162},
   series    = {Proceedings of Machine Learning Research},
-  month     = {17--23 Jul},
   publisher = {PMLR},
+  selected={true},
   pdf       = {https://proceedings.mlr.press/v162/fallah22a/fallah22a.pdf},
-  url       = {https://proceedings.mlr.press/v162/fallah22a.html},
+  html       = {https://proceedings.mlr.press/v162/fallah22a.html},
+  code      = {https://github.com/kfallah/variational-sparse-coding},
   abstract  = {Sparse coding strategies have been lauded for their parsimonious representations of data that leverage low dimensional structure. However, inference of these codes typically relies on an optimization procedure with poor computational scaling in high-dimensional problems. For example, sparse inference in the representations learned in the high-dimensional intermediary layers of deep neural networks (DNNs) requires an iterative minimization to be performed at each training step. As such, recent, quick methods in variational inference have been proposed to infer sparse codes by learning a distribution over the codes with a DNN. In this work, we propose a new approach to variational sparse coding that allows us to learn sparse distributions by thresholding samples, avoiding the use of problematic relaxations. We first evaluate and analyze our method by training a linear generator, showing that it has superior performance, statistical efficiency, and gradient estimation compared to other sparse distributions. We then compare to a standard variational autoencoder using a DNN generator on the CelebA dataset.}
 }
 
-@article{connor_learning_2021,
-  title    = {Learning {Identity}-{Preserving} {Transformations} on {Data} {Manifolds}},
-  url      = {http://arxiv.org/abs/2106.12096},
-  abstract = {Many machine learning techniques incorporate identity-preserving transformations into their models to generalize their performance to previously unseen data. These transformations are typically selected from a set of functions that are known to maintain the identity of an input when applied (e.g., rotation, translation, flipping, and scaling). However, there are many natural variations that cannot be labeled for supervision or defined through examination of the data. As suggested by the manifold hypothesis, many of these natural variations live on or near a low-dimensional, nonlinear manifold. Several techniques represent manifold variations through a set of learned Lie group operators that define directions of motion on the manifold. However theses approaches are limited because they require transformation labels when training their models and they lack a method for determining which regions of the manifold are appropriate for applying each specific operator. We address these limitations by introducing a learning strategy that does not require transformation labels and developing a method that learns the local regions where each operator is likely to be used while preserving the identity of inputs. Experiments on MNIST and Fashion MNIST highlight our model's ability to learn identity-preserving transformations on multi-class datasets. Additionally, we train on CelebA to showcase our model's ability to learn semantically meaningful transformations on complex datasets in an unsupervised manner.},
-  urldate  = {2022-04-01},
-  journal  = {arXiv:2106.12096 [cs, stat]},
-  author   = {Connor, Marissa and Fallah, Kion and Rozell, Christopher},
-  month    = jun,
-  year     = {2021},
-  note     = {arXiv: 2106.12096},
-  keywords = {Computer Science - Machine Learning, Statistics - Machine Learning},
-  file     = {arXiv Fulltext PDF:/Users/admin/Zotero/storage/YTPZX6LH/Connor et al. - 2021 - Learning Identity-Preserving Transformations on Da.pdf:application/pdf;arXiv.org Snapshot:/Users/admin/Zotero/storage/9KWT25WB/2106.html:text/html}
+@article{
+  connor2023learning,
+  title={Learning Identity-Preserving Transformations on Data Manifolds},
+  author={Marissa Catherine Connor* and Kion Fallah* and Christopher John Rozell},
+  journal={Transactions on Machine Learning Research},
+  issn={2835-8856},
+  year={2023},
+  selected={true},
+  url={https://openreview.net/forum?id=gyhiZYrk5y},
+  note={},
+    pdf       = {https://openreview.net/pdf?id=gyhiZYrk5y},
+    html       = {https://openreview.net/forum?id=gyhiZYrk5y},
+    code      = {https://github.com/siplab-gt/manifold-autoencoder-extended},
+    abstract = {Many machine learning techniques incorporate identity-preserving transformations into their models to generalize their performance to previously unseen data. These transformations are typically selected from a set of functions that are known to maintain the identity of an input when applied (e.g., rotation, translation, flipping, and scaling). However, there are many natural variations that cannot be labeled for supervision or defined through examination of the data. As suggested by the manifold hypothesis, many of these natural variations live on or near a low-dimensional, nonlinear manifold. Several techniques represent manifold variations through a set of learned Lie group operators that define directions of motion on the manifold. However, these approaches are limited because they require transformation labels when training their models and they lack a method for determining which regions of the manifold are appropriate for applying each specific operator. We address these limitations by introducing a learning strategy that does not require transformation labels and developing a method that learns the local regions where each operator is likely to be used while preserving the identity of inputs. Experiments on MNIST and Fashion MNIST highlight our model's ability to learn identity-preserving transformations on multi-class datasets. Additionally, we train on CelebA to showcase our model's ability to learn semantically meaningful transformations on complex datasets in an unsupervised manner.}
 }
 
 @inproceedings{fallah_learning_2020,
@@ -47,7 +55,11 @@ note={}
   url       = {https://proceedings.neurips.cc/paper/2020/file/a03fec24df877cc65c037673397ad5c0-Paper.pdf},
   booktitle = {Advances in {Neural} {Information} {Processing} {Systems}},
   publisher = {Curran Associates, Inc.},
-  author    = {Fallah, Kion and Willats, Adam and Liu, Ninghao and Rozell, Christopher},
+  author    = {Fallah, *Kion and Willats, *Adam and Liu, Ninghao and Rozell, Christopher},
   year      = {2020},
-  pages     = {13951--13963}
+  selected={true},
+  pdf       = {https://proceedings.neurips.cc/paper/2020/file/a03fec24df877cc65c037673397ad5c0-Paper.pdf},
+  html       = {https://proceedings.neurips.cc/paper/2020/hash/a03fec24df877cc65c037673397ad5c0-Abstract.html},
+  code      = {https://github.com/siplab-gt/localized-sparse-coding},
+  abstract  = {Sparse coding is an important method for unsupervised learning of task-independent features in theoretical neuroscience models of neural coding. While a number of algorithms exist to learn these representations from the statistics of a dataset, they largely ignore the information bottlenecks present in fiber pathways connecting cortical areas. For example, the visual pathway has many fewer neurons transmitting visual information to cortex than the number of photoreceptors. Both empirical and analytic results have recently shown that sparse representations can be learned effectively after performing dimensionality reduction with randomized linear operators, producing latent coefficients that preserve information. Unfortunately,current proposals for sparse coding in the compressed space require a centralized compression process (i.e., dense random matrix) that is biologically unrealistic due to local wiring constraints observed in neural circuits. The main contribution of this paper is to leverage recent results on structured random matrices to propose a theoretical neuroscience model of randomized projections for communication between cortical areas that is consistent with the local wiring constraints observed in neuroanatomy. We show analytically and empirically that unsupervised learning of sparse representations can be performed in the compressed space despite significant local wiring constraints in compression matrices of varying forms (corresponding to different local wiring patterns). Our analysis verifies that even with significant local wiring constraints, the learned representations remain qualitatively similar,have similar quantitative performance in both training and generalization error, and are consistent across many measures with measured macaque V1 receptive fields.}
 }
